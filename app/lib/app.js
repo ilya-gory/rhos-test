@@ -10,9 +10,11 @@ export default Object.extend({
 		this.layout = new Layout();
 		this.layout.render();
 		ra.on('route', 'default', this.triggerRoute);
-		Renderer.render = (template, data)=> {
-			return _.template(template)(data);
-		};
+		$('body').on('click', 'a[href^="#"]', (e)=> {
+			e.preventDefault();
+			this.triggerRoute(e.currentTarget.hash.replace('#', ''));
+		});
+		Renderer.render = (template, data)=> _.template(template)(data);
 		Backbone.history.start();
 	},
 	triggerRoute(fragment){

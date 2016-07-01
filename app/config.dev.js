@@ -7,8 +7,7 @@ System.config({
 		'backbone.radio':      'bower_components/backbone.radio/build/backbone.radio.js',
 		traceur:               'bower_components/traceur/traceur.js',
 		jquery:                'bower_components/jquery/dist/jquery.js',
-		text:                  'bower_components/systemjs-plugin-text/text.js',
-		html:                  'bower_components/systemjs-plugin-html/html.js'
+		text:                  'bower_components/systemjs-plugin-text/text.js'
 	},
 	map:     {
 		bb:         'backbone',
