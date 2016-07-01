@@ -1,0 +1,32 @@
+.contact-item {
+	border: 1px solid $gray-lighter;
+	padding: .5em;
+	margin: 1em 1.75em;
+	h3 {
+		margin-top: .5em;
+		font-size: 1em;
+		font-weight: bold;
+	}
+	.btn {
+		background: none;
+		transition: all 500ms;
+		&.btn-danger {
+			border-color: $gray;
+			color: $gray;
+			&:hover {
+				background-color: $gray;
+				color: #fff;
+			}
+		}
+		&.btn-success {
+			color: $brand-success;
+			&:focus {
+				border-color: $brand-success;
+			}
+			&:hover {
+				background-color: $brand-success;
+				color: #fff;
+			}
+		}
+	}
+}

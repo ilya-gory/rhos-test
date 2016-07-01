@@ -1,5 +1,13 @@
-<div class="item">
-	ITEM HERE
-	<button type="button" class="btn btn-success" data-ui="accept">Accept</button>
-	<button type="button" class="btn btn-danger" data-ui="decline">Decline</button>
+<div class="contact-item media">
+	<div class="media-left">
+		<img src="/app/img/guy.jpg" alt="<%= name%>, <%= location %>">
+	</div>
+	<div class="media-body">
+		<h3><%= name %></h3>
+		<p><%= location %></p>
+	</div>
+	<div class="media-right">
+		<button type="button" class="btn btn-success btn-block" data-ui="accept">Accept</button>
+		<button type="button" class="btn btn-danger btn-block" data-ui="decline">Decline</button>
+	</div>
 </div>

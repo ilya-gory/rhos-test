@@ -2,15 +2,18 @@ import {CollectionView,ItemView} from 'mn';
 import contactViewTpl from '../templates/colview/item.html';
 
 const ContactView = ItemView.extend({
-	template:  contactViewTpl,
-	behaviors: {
+	template:   contactViewTpl,
+	attributes: {
+		'class': 'col-md-6'
+	},
+	behaviors:  {
 		dataUi: {}
 	},
 	onRender(){
 		this.triggerMethod('item:pending');
 	},
 	onActionAccept(){
-		
+
 	},
 	onActionDecline(){
 
@@ -18,8 +21,11 @@ const ContactView = ItemView.extend({
 });
 
 export default CollectionView.extend({
-	childView: ContactView,
-	options:   {
+	attributes: {
+		'class': 'row'
+	},
+	childView:  ContactView,
+	options:    {
 		count: 0
 	},
 	onChildviewItemPending(){

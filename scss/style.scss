@@ -1,1 +1,9 @@
+@import "skin/variables";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "skin/elements";
+@import "colview/item";
+
+body {
+	background: $app-main-bg;
+	color: $gray;
+}
