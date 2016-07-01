@@ -13,6 +13,9 @@
     "lodash": "^3.x.x",
     "system.js": "^0.19.31",
     "traceur": "^0.0.111",
-    "jquery": "^3.0.0"
+    "jquery": "^3.0.0",
+    "backbone.radio": "^1.0.5",
+    "systemjs-plugin-text": "^0.0.2",
+    "systemjs-plugin-html": "https://github.com/Hypercubed/systemjs-plugin-html.git#^0.0.8"
   }
 }

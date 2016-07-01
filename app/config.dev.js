@@ -4,15 +4,19 @@ System.config({
 		backbone:              'bower_components/backbone/backbone.js',
 		lodash:                'bower_components/lodash/lodash.js',
 		'backbone.marionette': 'bower_components/backbone.marionette/lib/backbone.marionette.js',
+		'backbone.radio':      'bower_components/backbone.radio/build/backbone.radio.js',
 		traceur:               'bower_components/traceur/traceur.js',
-		jquery:                'bower_components/jquery/dist/jquery.js'
+		jquery:                'bower_components/jquery/dist/jquery.js',
+		text:                  'bower_components/systemjs-plugin-text/text.js',
+		html:                  'bower_components/systemjs-plugin-html/html.js'
 	},
 	map:     {
 		bb:         'backbone',
 		mn:         'backbone.marionette',
 		$:          'jquery',
 		_:          'lodash',
-		underscore: 'lodash'
+		underscore: 'lodash',
+		ra:         'backbone.radio'
 	},
 	meta:    {
 		lodash:   {
@@ -20,6 +24,9 @@ System.config({
 		},
 		'*.json': {
 			loader: 'json'
+		},
+		'*.html': {
+			loader: 'text'
 		}
 	}
 });
