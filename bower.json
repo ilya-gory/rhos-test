@@ -16,6 +16,8 @@
     "jquery": "^3.0.0",
     "backbone.radio": "^1.0.5",
     "systemjs-plugin-text": "^0.0.2",
-    "systemjs-plugin-html": "https://github.com/Hypercubed/systemjs-plugin-html.git#^0.0.8"
+    "systemjs-plugin-html": "https://github.com/Hypercubed/systemjs-plugin-html.git#^0.0.8",
+    "plugin-json": "https://github.com/systemjs/plugin-json.git#^0.1.2",
+    "bootstrap-sass": "^3.3.6"
   }
 }

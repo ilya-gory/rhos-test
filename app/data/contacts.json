@@ -1,0 +1,27 @@
+[
+	{
+		"id": 1,
+		"name": "Ronald McDonald",
+		"location": "Dublin"
+	},
+	{
+		"id": 2,
+		"name": "Brandon O'Bama",
+		"location": "NY"
+	},
+	{
+		"id": 3,
+		"name": "Trent Renzor",
+		"location": "Moscow"
+	},
+	{
+		"id": 4,
+		"name": "This Guy",
+		"location": "Springfield"
+	},
+	{
+		"id": 5,
+		"name": "Mr. Putin",
+		"location": "Washington, DC"
+	}
+]
