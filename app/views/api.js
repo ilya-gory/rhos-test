@@ -13,14 +13,20 @@ const KEYUP_TIMEOUT = 2000;
  */
 let keyupTimer = null;
 
+/**
+ * View for Api (Part 2)
+ */
 export default CompositeView.extend({
 	template:           tpl,
 	attributes:         {
 		'class': 'genres-widget'
 	},
 	ui:                 {
+		// query input
 		query:     '#query',
+		// no results container
 		noResults: '.no-results',
+		// query results container (holds list)
 		results:   '.search-results'
 	},
 	triggers:           {
@@ -46,12 +52,15 @@ export default CompositeView.extend({
 		this.ui.noResults.toggleClass('hidden', state);
 	},
 	onCollectionSync(){
+		// show "No results" if no items found for the query
 		this._toggleResults(!!this.collection.length);
 	},
 	onSearch(){
+		// delay query to wait for a user to finish input his query 
 		if (keyupTimer != null) return;
 		keyupTimer = setTimeout(()=> {
 			let q = this.ui.query.val();
+			// query!
 			this.collection.fetch({
 				query: encodeURIComponent(q)
 			});
@@ -59,6 +68,7 @@ export default CompositeView.extend({
 		}, KEYUP_TIMEOUT);
 	},
 	/**
+	 * Handler for add/remove to/from user-pick genres
 	 * @param {Marionette.ItemView} view -- genre view
 	 * @param {Object} dataset -- genre selector dataset
 	 */

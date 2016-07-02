@@ -10,6 +10,8 @@
 		font-weight: bold;
 	}
 	.btn {
+		// Success button uses twbs stadard btn-success styles
+		// Decline button
 		&.btn-danger {
 			border-color: $gray;
 			color: $gray;

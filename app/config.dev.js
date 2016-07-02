@@ -1,3 +1,7 @@
+/**
+ * Configure System.js.
+ * Uses uncompressed versions of libs for the development mode
+ */
 System.config({
 	baseURL: '/app',
 	paths:   {
@@ -30,4 +34,5 @@ System.config({
 		}
 	}
 });
+// run application
 System.import('main.js');

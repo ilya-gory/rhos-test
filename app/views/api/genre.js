@@ -1,6 +1,9 @@
 import {ItemView} from 'mn';
 import tpl from '../../templates/api/genre.html';
 
+/**
+ * Music genre in a list
+ */
 export default ItemView.extend({
 	template:    tpl,
 	tagName:     'li',
@@ -11,7 +14,7 @@ export default ItemView.extend({
 		'class': 'list-group-item'
 	},
 	modelEvents: {
-		'change:userAdded': 'render'
+		'change:userAdded': 'render' // update item for change selector state
 	},
 	serializeData(){
 		let d = ItemView.prototype.serializeData.apply(this);

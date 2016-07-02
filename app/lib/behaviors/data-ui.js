@@ -1,5 +1,9 @@
 import {Behavior} from 'mn';
 
+/**
+ * Behavior that catches clicks on elements with `data-ui` attribute.
+ * It triggers action:`data-ui value` on the view
+ */
 export default Behavior.extend({
 	ui:     {
 		action: '[data-ui]'

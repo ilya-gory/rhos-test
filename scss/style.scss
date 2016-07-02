@@ -1,6 +1,11 @@
+/*
+	Main stylesheet file
+*/
+// --- Config & frameworks
 @import "skin/variables";
 @import "../bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 @import "skin/elements";
+// --- Pages-specific
 @import "contacts/item";
 @import "api/api";
 @import "api/genre";
