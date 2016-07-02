@@ -12,6 +12,11 @@ export default ItemView.extend({
 	onRender(){
 		this.triggerMethod('item:pending');
 	},
+	onDomRefresh(){
+		this.$('img').on('load', ()=> {
+			this.triggerMethod('item:loaded');
+		});
+	},
 	onActionAccept(){
 		this.triggerMethod('item:accept');
 	},

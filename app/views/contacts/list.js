@@ -7,15 +7,19 @@ export default CompositeView.extend({
 	childView:          ContactView,
 	template:           tpl,
 	options:            {
-		count: 0
+		count:  0,
+		loaded: 0
 	},
 	onChildviewItemPending(){
 		this.options.count++;
 	},
+	onChildviewItemLoaded(){
+		this.options.loaded++;
+		if (this.options.count == this.options.loaded) {
+			alert('Pending contacts collection view is rendered and shown');
+		}
+	},
 	onRender(){
 		console.log(`There's ${this.getOption('count')} contacts pending!`);
-	},
-	onDomRefresh(){
-		//alert('Pending contacts collection view is rendered and shown');
 	}
 });
