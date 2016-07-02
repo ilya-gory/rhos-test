@@ -1,0 +1,8 @@
+.genres-widget {
+	border: 1px solid $app-border-color;
+	padding: $app-widget-padding;
+	.control-label {
+		font-weight: normal;
+		margin-bottom: 0;
+	}
+}

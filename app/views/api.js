@@ -15,6 +15,9 @@ let keyupTimer = null;
 
 export default CompositeView.extend({
 	template:           tpl,
+	attributes:         {
+		'class': 'genres-widget'
+	},
 	ui:                 {
 		query:     '#query',
 		noResults: '.no-results',
@@ -23,7 +26,7 @@ export default CompositeView.extend({
 	triggers:           {
 		'keyup': 'search'
 	},
-	childViewContainer: '.api-results-list',
+	childViewContainer: '.api-results-list>ul',
 	childView:          GenreView,
 	collectionEvents:   {
 		sync: 'onCollectionSync'

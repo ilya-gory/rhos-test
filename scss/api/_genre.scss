@@ -1,0 +1,15 @@
+.genre-selector {
+	border: 1px solid darken($brand-success, 20%);
+	background: none;
+	color: $brand-success;
+	margin: 0;
+	font-size: 1.5em;
+	padding: 0 .3em;
+	line-height: 1.2em;
+	border-radius: 2em;
+	margin-top: -0.15em;
+	&.active {
+		background: $brand-success;
+		color: #fff;
+	}
+}

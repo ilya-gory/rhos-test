@@ -4,6 +4,8 @@
 
 // -------------- Application
 $app-main-bg: #f8f8f8;
+$app-border-color: #eee; // $gray-lighter from twbs _variables.scss
+$app-widget-padding: .5em;
 
 // -------------- Bootstrap override
 $body-bg: $app-main-bg;
