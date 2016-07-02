@@ -1,12 +1,12 @@
 [
 	{
 		"id": 1,
-		"name": "Ronald McDonald",
+		"name": "Damo Suzuki",
 		"location": "Dublin"
 	},
 	{
 		"id": 2,
-		"name": "Brandon O'Bama",
+		"name": "Dani Filth",
 		"location": "NY"
 	},
 	{
@@ -16,12 +16,12 @@
 	},
 	{
 		"id": 4,
-		"name": "This Guy",
+		"name": "Richard James",
 		"location": "Springfield"
 	},
 	{
 		"id": 5,
-		"name": "Mr. Putin",
+		"name": "Herbie Hancock",
 		"location": "Washington, DC"
 	}
 ]
