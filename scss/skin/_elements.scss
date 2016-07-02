@@ -1,9 +1,26 @@
+/*
+	Common elements
+*/
+
+// -------------- Bootstrap override
 .btn {
+	background: none;
+	transition: all 500ms;
 	&:active,
 	&.active {
 		box-shadow: none;
 	}
 	&:focus {
 		outline: none;
+	}
+	&.btn-success {
+		color: $brand-success;
+		&:focus {
+			border-color: $brand-success;
+		}
+		&:hover {
+			background-color: $brand-success;
+			color: #fff;
+		}
 	}
 }

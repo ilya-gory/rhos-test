@@ -1,29 +1,20 @@
 import ra from 'ra';
-import IndexView from '../views/index.js';
 
-import ColView from '../views/colview.js';
-import {Collection as Contacts} from '../models/contacts.js';
+import IndexView from '../views/index.js';
+import ContactsView from '../views/contacts.js';
 
 export default {
 	appRoutes:  {
-		'':            'index',
-		colview:       'colview',
-		'colview/:id': 'colid',
-		api:           'api'
+		'':       'index',
+		contacts: 'contacts',
+		api:      'api'
 	},
 	controller: {
 		index(){
 			ra.trigger('layout', 'render', new IndexView());
 		},
-		colview(){
-			(new Contacts()).fetch({
-				success(c){
-					ra.trigger('layout', 'render', new ColView({collection: c}));
-				}
-			});
-		},
-		colid(id){
-			console.log('colid');
+		contacts(){
+			ra.trigger('layout', 'render', new ContactsView());
 		},
 		api(){
 			console.log('api');

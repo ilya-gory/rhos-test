@@ -1,5 +1,11 @@
+/*
+	Skin variables
+*/
+
 // -------------- Application
 $app-main-bg: #f8f8f8;
 
 // -------------- Bootstrap override
+$body-bg: $app-main-bg;
+$text-color: #555; // $gray from twbs _variables.scss
 $border-radius-base: 0px;
