@@ -8,6 +8,7 @@
 	line-height: 1.2em;
 	border-radius: 2em;
 	margin-top: -0.15em;
+	cursor: pointer;
 	&.active {
 		background: $brand-success;
 		color: #fff;

@@ -28,6 +28,11 @@ export default CompositeView.extend({
 	},
 	childViewContainer: '.api-results-list>ul',
 	childView:          GenreView,
+	childViewOptions(model){
+		return {
+			userAdded: this.getOption('userGenres').contains(model)
+		}
+	},
 	collectionEvents:   {
 		sync: 'onCollectionSync'
 	},
@@ -52,5 +57,19 @@ export default CompositeView.extend({
 			});
 			keyupTimer = null;
 		}, KEYUP_TIMEOUT);
+	},
+	/**
+	 * @param {Marionette.ItemView} view -- genre view
+	 * @param {Object} dataset -- genre selector dataset
+	 */
+	onChildviewActionGenreAdd(view, dataset){
+		let ug = this.getOption('userGenres');
+		if (!ug.contains(view.model)) {
+			ug.add(view.model);
+			view.model.set('userAdded', true);
+		} else {
+			ug.remove(view.model);
+			view.model.unset('userAdded');
+		}
 	}
 });

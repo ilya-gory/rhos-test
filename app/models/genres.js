@@ -11,12 +11,16 @@ export const Collection = bCollection.extend({
 	authToken: null,
 	url:       'http://alpha.core.soundframework.com/api/0/rest/json/genre/find/query',
 	sync(mode, collection, options){
+		if (!this.authToken) return; // user's genres collection is read-only
+		if (_.isEmpty(options.query)) return; // restrict empty requests
 		options.url = `${collection.url}/${options.query}`;
 		sync.apply(this, arguments);
 	},
 	constructor(models, options){
-		this.authToken = options.authToken;
-		delete options.authToken;
+		if (options && options.authToken) {
+			this.authToken = options.authToken;
+			delete options.authToken;
+		}
 		bCollection.apply(this, arguments);
 	},
 	fetch(options){

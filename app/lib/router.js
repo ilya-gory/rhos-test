@@ -19,7 +19,10 @@ export default {
 			ra.trigger('layout', 'render', new ContactsView());
 		},
 		api(){
-			ra.trigger('layout', 'render', new ApiView({collection: new GenresCollection([], {authToken: 'client'})}));
+			ra.trigger('layout', 'render', new ApiView({
+				collection: new GenresCollection([], {authToken: 'client'}),
+				userGenres: new GenresCollection()
+			}));
 		}
 	}
 }
