@@ -1,3 +1,5 @@
+<h3 class="page-header text-<%= (state == 'accept') ? 'success':'danger'%>">
+	Contact been <%= (state == 'accept')? 'accepted':'declined'%></h3>
 <div class="media contact-item">
 	<div class="media-left">
 		<img src="<%= userpic%>" alt="<%= name%>, <%= location %>" class="media-object">
@@ -5,9 +7,6 @@
 	<div class="media-body">
 		<h4 class="media-heading"><%= name %></h4>
 		<p><%= location %></p>
-	</div>
-	<div class="media-right">
-		<button type="button" class="btn btn-success btn-block" data-ui="accept">Accept</button>
-		<button type="button" class="btn btn-danger btn-block" data-ui="decline">Decline</button>
+		<button class="btn btn-default" data-ui="back">← Back to Pending Contacts</button>
 	</div>
 </div>

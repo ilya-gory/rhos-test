@@ -2,26 +2,31 @@
 	{
 		"id": 1,
 		"name": "Damo Suzuki",
-		"location": "Dublin"
+		"location": "Dublin",
+		"userpic": "/app/img/guy.jpg"
 	},
 	{
 		"id": 2,
 		"name": "Dani Filth",
-		"location": "NY"
+		"location": "NY",
+		"userpic": "/app/img/guy.jpg"
 	},
 	{
 		"id": 3,
 		"name": "Trent Renzor",
-		"location": "Moscow"
+		"location": "Moscow",
+		"userpic": "/app/img/guy.jpg"
 	},
 	{
 		"id": 4,
 		"name": "Richard James",
-		"location": "Springfield"
+		"location": "Springfield",
+		"userpic": "/app/img/guy.jpg"
 	},
 	{
 		"id": 5,
 		"name": "Herbie Hancock",
-		"location": "Washington, DC"
+		"location": "Washington, DC",
+		"userpic": "/app/img/guy.jpg"
 	}
 ]

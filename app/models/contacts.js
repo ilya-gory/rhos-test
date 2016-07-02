@@ -4,7 +4,8 @@ export const Model = bModel.extend({
 	defaults: {
 		id:       null,
 		name:     null,
-		location: null
+		location: null,
+		userpic:  null
 	}
 });
 

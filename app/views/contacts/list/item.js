@@ -13,9 +13,9 @@ export default ItemView.extend({
 		this.triggerMethod('item:pending');
 	},
 	onActionAccept(){
-
+		this.triggerMethod('item:accept');
 	},
 	onActionDecline(){
-
+		this.triggerMethod('item:decline');
 	}
 });
